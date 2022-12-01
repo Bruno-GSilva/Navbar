@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>nav-project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style/style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <!-- icone -->
+      <span class="icon">
+        <img src="src/style/image/menu.png" />
+      </span>
+      <!-- logo -->
+      <div class="logo">
+        <h1>BGS - Bruno G.</h1>
+      </div>
+      <!-- items -->
+      <ul class="nav-items">
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">animes</a></li>
+        <li><a href="#">filmes</a></li>
+      </ul>
+    </nav>
+    <!-- <link rel="stylesheet" href="main.js" /> -->
+    <script>
+      const navi = () => {
+        const icon = document.querySelector(".nav-bar .icon");
+        const nav_items = document.querySelector(".nav-bar .nav-items");
+
+        icon.addEventListener("click", () => {
+          nav_items.classList.toggle("active");
+        });
+      };
+      navi();
+    </script>
+  </body>
+</html>
